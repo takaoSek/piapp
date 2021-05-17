@@ -20,3 +20,5 @@ target_compile_options(${PROJECT_NAME} PUBLIC
     -O2 -Wall)
 target_link_libraries(${PROJECT_NAME}
     ${Boost_LIBRARIES})
+
+install(TARGETS ${PROJECT_NAME} RUNTIME DESTINATION bin)
